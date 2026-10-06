@@ -9,9 +9,14 @@ on:
 
 jobs:
   build-and-test:
-    runs-on: ubuntu-latest
+    name: Build & Test (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false # Nếu 1 hệ điều hành bị lỗi, 2 hệ điều hành kia vẫn tiếp tục chạy để xem kết quả
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
 
-    steps:
+    steps:  
     # 1. Kéo mã nguồn về máy ảo
     - name: Checkout code
       uses: actions/checkout@v4
