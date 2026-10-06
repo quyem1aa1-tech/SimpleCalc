@@ -1,0 +1,35 @@
+name: C++ CMake & CTest CI
+
+# Chạy mỗi khi có ai push hoặc tạo Pull Request lên nhánh main/master
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    # 1. Kéo mã nguồn về máy ảo
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    # 2. Cài đặt các công cụ biên dịch (CMake, Ninja, g++)
+    - name: Setup build environment
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y cmake ninja-build g++
+
+    # 3. Tạo thư mục build và cấu hình với Ninja
+    - name: Configure CMake
+      run: cmake -B build -G Ninja -DCMAKE_BUILD_TYPE=Release
+
+    # 4. Biên dịch toàn bộ target (calc_lib, simple_calc, unit_tests)
+    - name: Build targets
+      run: cmake --build build
+
+    # 5. Chạy CTest tự động
+    - name: Run automated tests
+      run: ctest --test-dir build --output-on-failure
