@@ -1,6 +1,5 @@
-name: C++ CMake & CTest CI
+name: Multi-Platform C++ CI
 
-# Chạy mỗi khi có ai push hoặc tạo Pull Request lên nhánh main/master
 on:
   push:
     branches: [ "main", "master" ]
@@ -12,29 +11,22 @@ jobs:
     name: Build & Test (${{ matrix.os }})
     runs-on: ${{ matrix.os }}
     strategy:
-      fail-fast: false # Nếu 1 hệ điều hành bị lỗi, 2 hệ điều hành kia vẫn tiếp tục chạy để xem kết quả
+      fail-fast: false
       matrix:
         os: [ubuntu-latest, windows-latest, macos-latest]
 
-    steps:  
-    # 1. Kéo mã nguồn về máy ảo
+    steps:
     - name: Checkout code
       uses: actions/checkout@v4
 
-    # 2. Cài đặt các công cụ biên dịch (CMake, Ninja, g++)
-    - name: Setup build environment
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y cmake ninja-build g++
-
-    # 3. Tạo thư mục build và cấu hình với Ninja
+    # 1. Cấu hình CMake mặc định cho từng OS (không ép Ninja)
     - name: Configure CMake
-      run: cmake -B build -G Ninja -DCMAKE_BUILD_TYPE=Release
+      run: cmake -B build -DCMAKE_BUILD_TYPE=Release
 
-    # 4. Biên dịch toàn bộ target (calc_lib, simple_calc, unit_tests)
+    # 2. Biên dịch (hỗ trợ cả Visual Studio trên Windows và Makefile/Clang trên Mac/Linux)
     - name: Build targets
-      run: cmake --build build
+      run: cmake --build build --config Release
 
-    # 5. Chạy CTest tự động
+    # 3. Chạy CTest (-C Release để định vị đúng file thực thi trên Windows)
     - name: Run automated tests
-      run: ctest --test-dir build --output-on-failure
+      run: ctest --test-dir build -C Release --output-on-failure
