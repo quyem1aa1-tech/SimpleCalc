@@ -1,0 +1,4 @@
+AllCalculatorTests 2 0.0011735
+BasicMathTest 2 0.00128635
+PrimeTest 1 0.0030489
+---

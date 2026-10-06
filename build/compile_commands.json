@@ -1,0 +1,32 @@
+[
+{
+  "directory": "/home/vinh/01_sandbox/01_SimpleCalc/build",
+  "command": "/usr/bin/g++ -I/home/vinh/01_sandbox/01_SimpleCalc/include -I/home/vinh/01_sandbox/01_SimpleCalc/src -g -std=gnu++17 -Wall -Wextra -o src/CMakeFiles/calc_lib.dir/calculator.cpp.o -c /home/vinh/01_sandbox/01_SimpleCalc/src/calculator.cpp",
+  "file": "/home/vinh/01_sandbox/01_SimpleCalc/src/calculator.cpp",
+  "output": "src/CMakeFiles/calc_lib.dir/calculator.cpp.o"
+},
+{
+  "directory": "/home/vinh/01_sandbox/01_SimpleCalc/build",
+  "command": "/usr/bin/g++ -I/home/vinh/01_sandbox/01_SimpleCalc/include -I/home/vinh/01_sandbox/01_SimpleCalc/src -g -std=gnu++17 -Wall -Wextra -o src/CMakeFiles/calc_lib.dir/internal_math.cpp.o -c /home/vinh/01_sandbox/01_SimpleCalc/src/internal_math.cpp",
+  "file": "/home/vinh/01_sandbox/01_SimpleCalc/src/internal_math.cpp",
+  "output": "src/CMakeFiles/calc_lib.dir/internal_math.cpp.o"
+},
+{
+  "directory": "/home/vinh/01_sandbox/01_SimpleCalc/build",
+  "command": "/usr/bin/g++ -I/home/vinh/01_sandbox/01_SimpleCalc/include -g -std=gnu++17 -o app/CMakeFiles/simple_calc.dir/main.cpp.o -c /home/vinh/01_sandbox/01_SimpleCalc/app/main.cpp",
+  "file": "/home/vinh/01_sandbox/01_SimpleCalc/app/main.cpp",
+  "output": "app/CMakeFiles/simple_calc.dir/main.cpp.o"
+},
+{
+  "directory": "/home/vinh/01_sandbox/01_SimpleCalc/build",
+  "command": "/usr/bin/g++ -I/home/vinh/01_sandbox/01_SimpleCalc/include -g -std=gnu++17 -o tests/CMakeFiles/test_basic.dir/test_calc.cpp.o -c /home/vinh/01_sandbox/01_SimpleCalc/tests/test_calc.cpp",
+  "file": "/home/vinh/01_sandbox/01_SimpleCalc/tests/test_calc.cpp",
+  "output": "tests/CMakeFiles/test_basic.dir/test_calc.cpp.o"
+},
+{
+  "directory": "/home/vinh/01_sandbox/01_SimpleCalc/build",
+  "command": "/usr/bin/g++ -I/home/vinh/01_sandbox/01_SimpleCalc/include -g -std=gnu++17 -o tests/CMakeFiles/test_prime.dir/test_prime.cpp.o -c /home/vinh/01_sandbox/01_SimpleCalc/tests/test_prime.cpp",
+  "file": "/home/vinh/01_sandbox/01_SimpleCalc/tests/test_prime.cpp",
+  "output": "tests/CMakeFiles/test_prime.dir/test_prime.cpp.o"
+}
+]

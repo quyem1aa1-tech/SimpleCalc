@@ -1,0 +1,19 @@
+# ninja log v5
+494	695	1791282932537486185	app/simple_calc	10ec601a1d6cee63
+2	493	1791282932339791782	app/CMakeFiles/simple_calc.dir/main.cpp.o	d384dfa9eb99c2f4
+1	405	1791281511299818867	tests/CMakeFiles/unit_tests.dir/test_calc.cpp.o	3cfba7a8050c9159
+406	595	1791281511488391869	tests/unit_tests	1bed99e9fcee071
+308	355	1791282932199941380	src/libcalc_lib.a	44eb6826a6c7c728
+1	308	1791282932154541479	src/CMakeFiles/calc_lib.dir/calculator.cpp.o	9b64a01972663d99
+1	33	1791283065667984633	build.ninja	ed679e368f3ebd75
+1	5	0	clean	a31eedcededa8236
+2	506	1791282932352912782	tests/CMakeFiles/test_basic.dir/test_calc.cpp.o	c339282dec60b6b8
+2	32	1791282931877905076	src/CMakeFiles/calc_lib.dir/internal_math.cpp.o	bdaaee1d90c8526e
+2	409	1791282932255546581	tests/CMakeFiles/test_prime.dir/test_prime.cpp.o	5c76ffa88672b8c5
+409	591	1791282932436103183	tests/test_prime	c636a08296b30b1
+507	703	1791282932545016185	tests/test_basic	17fcede5973d01be
+2	26	1791283173501445953	src/CMakeFiles/calc_lib.dir/internal_math.cpp.o	bdaaee1d90c8526e
+26	73	1791283173547374653	src/libcalc_lib.a	44eb6826a6c7c728
+74	265	1791283173740104653	tests/test_prime	c636a08296b30b1
+74	282	1791283173756259753	tests/test_basic	17fcede5973d01be
+73	283	1791283173758272753	app/simple_calc	10ec601a1d6cee63

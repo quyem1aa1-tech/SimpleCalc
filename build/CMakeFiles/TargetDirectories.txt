@@ -1,0 +1,16 @@
+/home/vinh/01_sandbox/01_SimpleCalc/build/CMakeFiles/test.dir
+/home/vinh/01_sandbox/01_SimpleCalc/build/CMakeFiles/edit_cache.dir
+/home/vinh/01_sandbox/01_SimpleCalc/build/CMakeFiles/rebuild_cache.dir
+/home/vinh/01_sandbox/01_SimpleCalc/build/src/CMakeFiles/calc_lib.dir
+/home/vinh/01_sandbox/01_SimpleCalc/build/src/CMakeFiles/test.dir
+/home/vinh/01_sandbox/01_SimpleCalc/build/src/CMakeFiles/edit_cache.dir
+/home/vinh/01_sandbox/01_SimpleCalc/build/src/CMakeFiles/rebuild_cache.dir
+/home/vinh/01_sandbox/01_SimpleCalc/build/app/CMakeFiles/simple_calc.dir
+/home/vinh/01_sandbox/01_SimpleCalc/build/app/CMakeFiles/test.dir
+/home/vinh/01_sandbox/01_SimpleCalc/build/app/CMakeFiles/edit_cache.dir
+/home/vinh/01_sandbox/01_SimpleCalc/build/app/CMakeFiles/rebuild_cache.dir
+/home/vinh/01_sandbox/01_SimpleCalc/build/tests/CMakeFiles/test_basic.dir
+/home/vinh/01_sandbox/01_SimpleCalc/build/tests/CMakeFiles/test_prime.dir
+/home/vinh/01_sandbox/01_SimpleCalc/build/tests/CMakeFiles/test.dir
+/home/vinh/01_sandbox/01_SimpleCalc/build/tests/CMakeFiles/edit_cache.dir
+/home/vinh/01_sandbox/01_SimpleCalc/build/tests/CMakeFiles/rebuild_cache.dir
