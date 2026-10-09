@@ -10,5 +10,16 @@ The goal of this mini-project is to master target-based Modern CMake:
 - Manage compiler flags and include paths without polluting the global scope.
 - Prepare the project structure for automated testing with `CTest` and CI/CD pipelines.
 
+## Quick Start
+
+### Build
+```bash
+cmake -B build -S .
+cmake --build build
+```
+
+### Run test
+`ctest --test-dir build --output-on-failure`
+
 
 [![C++ CMake & CTest CI](https://github.com/quyem1aa1-tech/01_SimpleCalc/actions/workflows/ci.yml/badge.svg)](https://github.com/quyem1aa1-tech/01_SimpleCalc/actions/workflows/ci.yml)
