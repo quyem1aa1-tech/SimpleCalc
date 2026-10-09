@@ -1,4 +1,4 @@
-# 01_SimpleCalc
+# SimpleCalc
 
 A lightweight C++ calculator project focused on practicing **Modern CMake** principles and modular software architecture.
 
